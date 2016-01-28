@@ -6,7 +6,9 @@ A small service to forward Loggly Alerts to Slack. Doesn't require any configura
 ## Usage
 
 In your Loggly Alerting Endpoint configure the URL as:  
+```
 {LogglySlackerHost}/?token={Slack Token}&channel={Slack channel}&icon_emoji=:grey_exclamation:&color={good|warning|danger}
+```
 
 ## Advanced ##
 
