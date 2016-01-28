@@ -13,7 +13,10 @@ namespace LogglySlacker
                     token = alert.token,
                     channel = alert.channel[0] == '#' ? alert.channel : "#" + alert.channel,
                     text = "",
-                    icon_emoji = alert.icon_emoji
+                    icon_emoji = alert.icon_emoji,
+                    as_user = false,
+                    username = "Loggly",
+                    unfurl_media = false
                 };
         }
 

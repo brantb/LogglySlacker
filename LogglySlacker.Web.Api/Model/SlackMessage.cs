@@ -7,8 +7,8 @@ namespace LogglySlacker.Model
         public string text { get; set; }
         public string icon_emoji { get; set; }
 
-        public bool as_user { get { return false; } }
-        public string username { get { return "Loggly"; } }
-        public bool unfurl_media { get { return false; } }
+        public bool as_user { get; set; }
+        public string username { get; set; }
+        public bool unfurl_media { get; set; }
     }
 }
