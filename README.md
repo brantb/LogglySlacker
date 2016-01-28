@@ -1,7 +1,12 @@
 LogglySlacker
 ===================
 
-A small service to forward Loggly alerts to Slack. Doesn't require any configuration of the app or any credentials, all parameters are simply entered in the URL of the Loggly config screen like any other Slack integration.
+A small service to forward Loggly Alerts to Slack. Doesn't require any configuration of the app or any credentials, all parameters are simply entered in the URL of the Loggly config screen like any other Slack integration.
+
+## Usage
+
+In your Loggly Alerting Endpoint configure the URL as:
+{LogglySlackerHost}/?token={Slack Token}&channel={Slack channel}&icon_emoji=:grey_exclamation:&color={good|warning|danger}
 
 ## Advanced ##
 
