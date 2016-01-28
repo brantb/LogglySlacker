@@ -1,10 +1,10 @@
 using System.Diagnostics;
 using System.Linq;
-using LogglySlackAzure.Model;
+using LogglySlacker.Model;
 using Newtonsoft.Json;
 using RestSharp;
 
-namespace LogglySlackAzure
+namespace LogglySlacker
 {
     public class SlackClient : ISlackClient
     {

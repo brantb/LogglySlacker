@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using LogglySlackAzure.Model;
+using LogglySlacker.Model;
 
-namespace LogglySlackAzure
+namespace LogglySlacker
 {
     public interface IBuildSlackMessages
     {

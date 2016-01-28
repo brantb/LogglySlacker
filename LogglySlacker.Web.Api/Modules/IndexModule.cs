@@ -1,12 +1,10 @@
 ﻿using System.Collections.Generic;
-using System.Diagnostics;
-using LogglySlackAzure.Model;
+using LogglySlacker.Model;
 using Nancy;
-using Nancy.Extensions;
 using Nancy.ModelBinding;
 using Newtonsoft.Json;
 
-namespace LogglySlackAzure.Modules
+namespace LogglySlacker.Modules
 {
     public class IndexModule : NancyModule
     {

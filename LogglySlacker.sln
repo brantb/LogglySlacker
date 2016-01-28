@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogglySlackAzure.Web.Api", "LogglySlackAzure.Web.Api\LogglySlackAzure.Web.Api.csproj", "{B4F9C525-5C56-440E-B4C2-972A33D7C8CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogglySlacker.Web.Api", "LogglySlacker.Web.Api\LogglySlacker.Web.Api.csproj", "{B4F9C525-5C56-440E-B4C2-972A33D7C8CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

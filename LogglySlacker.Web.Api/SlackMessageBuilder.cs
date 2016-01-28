@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
-using LogglySlackAzure.Model;
+using LogglySlacker.Model;
 
-namespace LogglySlackAzure
+namespace LogglySlacker
 {
     public class SlackMessageBuilder : IBuildSlackMessages
     {
@@ -30,12 +30,12 @@ namespace LogglySlackAzure
                 };
         }
 
-        private IEnumerable<SlackAttachmentField> GetAttachmentFields(IEnumerable<LogglyHit> hits)
+        private static IEnumerable<SlackAttachmentField> GetAttachmentFields(IEnumerable<LogglyHit> hits)
         {
             return hits.Select(BuildAttachmentField);
         }
 
-        private SlackAttachmentField BuildAttachmentField(LogglyHit hit)
+        private static SlackAttachmentField BuildAttachmentField(LogglyHit hit)
         {
             return new SlackAttachmentField
                 {

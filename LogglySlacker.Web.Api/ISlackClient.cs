@@ -1,6 +1,6 @@
-using LogglySlackAzure.Model;
+using LogglySlacker.Model;
 
-namespace LogglySlackAzure
+namespace LogglySlacker
 {
     public interface ISlackClient
     {

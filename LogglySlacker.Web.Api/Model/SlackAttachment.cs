@@ -1,4 +1,4 @@
-﻿namespace LogglySlackAzure.Model
+﻿namespace LogglySlacker.Model
 {
     public class SlackAttachment
     {
