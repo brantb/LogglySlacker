@@ -25,9 +25,9 @@ namespace LogglySlacker
             return new SlackAttachment
                 {
                     fallback = string.Empty,
-                    title = string.Format("{0} entries from \'{1}\'", alert.num_hits, alert.alert_name),
+                    title = $"{alert.num_hits} entries from \'{alert.alert_name}\'",
                     title_link = alert.search_link,
-                    text = string.Format("Between {0} and {1} UTC", alert.start_time, alert.end_time),
+                    text = $"Between {alert.start_time} and {alert.end_time} UTC",
                     color = alert.color,
                     fields = GetAttachmentFields(hits).ToArray()
                 };
@@ -43,7 +43,7 @@ namespace LogglySlacker
             return new SlackAttachmentField
                 {
                     title = hit.logger,
-                    value = hit.message.Split('\n').FirstOrDefault() ?? hit.message
+                    value = hit.message?.Split('\n').FirstOrDefault() ?? hit.message
                 };
         }
     }
