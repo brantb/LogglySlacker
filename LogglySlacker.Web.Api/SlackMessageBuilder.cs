@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using LogglySlacker.Model;
@@ -43,8 +44,14 @@ namespace LogglySlacker
             return new SlackAttachmentField
                 {
                     title = hit.logger,
-                    value = hit.message?.Split('\n').FirstOrDefault() ?? hit.message
+                    value = GetMessage(hit)
                 };
+        }
+
+        private static string GetMessage(LogglyHit hit)
+        {
+            hit.message = string.Concat(hit.message, hit.messageObject);
+            return hit.message?.Split('\n').FirstOrDefault() ?? hit.message;
         }
     }
 }

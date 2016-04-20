@@ -6,5 +6,6 @@
         public string time { get; set; }
         public string message { get; set; }
         public string logger { get; set; }
+        public string messageObject { get; set; }
     }
 }
